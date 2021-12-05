@@ -41,9 +41,10 @@ const createElement = async () => {
 
   let count = 1 
 
-
+  
   const element = async (count) =>{
     var arrayPj = [];
+    var holaComo;
     peticionChar = await fetch(`https://rickandmortyapi.com/api/character?page=${count}`)
     character = await peticionChar.json()
 
