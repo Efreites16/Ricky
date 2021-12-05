@@ -1,0 +1,25 @@
+peticionCharacters = await fetch(respuesta.characters)
+  respuestaCharacters = await peticionCharacters.json()
+  arrayPj = respuestaCharacters.results
+
+  
+  addElement(arrayPj, offSet, limit)
+  
+  next.addEventListener('click', () => {
+    max = parseInt(arrayPj.length / limit)
+    if (finish <= max) {
+      finish += 1
+      offSet += 8
+      newElement()
+      addElement(arrayPj, offSet, limit)
+    }
+  })
+
+  back.addEventListener('click', () => {
+    if (offSet != 0) {
+      offSet -= 8
+      finish -= 1
+      newElement()
+      addElement(arrayPj, offSet, limit)
+    }
+  })

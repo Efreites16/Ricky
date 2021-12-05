@@ -1,0 +1,114 @@
+body html{
+  padding: 0;
+  margin: 0;
+  font-family: 'Asap', sans-serif;
+}
+
+.header{
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.header ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 25px;
+}
+
+.header ul a{
+  color: black;
+  text-decoration: none;
+}
+
+.header ul li:hover{
+  transition: 0.1s;
+  border-bottom: 4px solid rgba(113, 255, 47, 0.89);
+  color: rgb(0, 247, 255);;
+}
+main{
+  padding-top: 130px;
+  background-color: #d3d3d33b;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 285px));
+  grid-template-rows: auto;
+  justify-content: space-around;
+}
+
+.pj{
+  padding: 6px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  font-size: 16px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2) ;
+}
+.pj:hover{
+  transition: 0.2s;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(113, 255, 47, 0.89) ;
+}
+
+.pj img{
+  justify-self: center;
+  border-radius: 50%;
+  width:175px;
+  height: 175px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.info{
+  justify-self: center;
+  width: 110px;
+  height: 40px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-family: 'Asap', sans-serif;
+  color: grey;
+  font-size: 17px;
+  background-color: rgb(0, 247, 255);
+  border: 2px solid rgba(113, 255, 47, 0.89);
+}
+.info:hover{
+  color: black;
+  transition: 0.3s;
+  background-color:  rgba(113, 255, 47, 0.89);;
+  transform: scale(1.03, 1.03);
+}
+
+.buttons{
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+.page{
+  width: 110px;
+  height: 40px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-family: 'Asap', sans-serif;
+  color: grey;
+  font-size: 17px;
+  background-color:rgba(113, 255, 47, 0.89);
+  border: 2px solid rgb(0, 247, 255);
+}
+.page:hover{
+  color: black;
+  transition: 0.3s;
+  background-color: rgb(0, 247, 255);
+  transform: scale(1.06, 1.06);
+
+}
